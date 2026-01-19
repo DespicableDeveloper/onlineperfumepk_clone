@@ -1,0 +1,113 @@
+@media (max-width:768px) {
+    nav {
+        display: none;
+    }
+
+    .header-section .header-child1 {
+        justify-content: start;
+    }
+
+    .header-section .header-child1 .input {
+        display: none;
+    }
+
+    .header-child2 .header-icon1,
+    .header-child2 .header-icon2 {
+        display: none;
+    }
+
+    .header-child2 .header-icon3 {
+        display: block;
+
+    }
+
+    .header-child2 .header-icon3 button {
+        border: none;
+        width: 45px;
+        height: 45px;
+        background-color: var(--primary-color);
+        display: block;
+        margin: auto;
+    }
+
+    .featured-title h3 {
+        left: 36.5%;
+    }
+
+    .product-list,
+    .featured-collection,
+    .product-banner,
+    .men-perfume,
+    .pefume_list,
+    .brand-section {
+
+        padding: 30px 50px;
+    }
+
+    .featured-product,
+    .product-list2 ,.men-perfume,.pefume_list .parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list-1 .list-info,
+    .list-2 .list-info,
+    .list-3 .list-info,
+    .list-4 .list-info {
+        top: 120px;
+    }
+
+    .featured-collection:nth-child(1) .featured-title h2 {
+        top: 0px;
+        left: 20%;
+        max-width: 60%;
+        padding: 0px;
+    }
+    .men-perfume-col .image {
+        height: 100vh;
+    }
+    .footer-email{
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    .footer-input{
+        justify-content: center;
+    }
+    .footer-bottom{
+        text-align: center;
+    }
+}
+
+@media (max-width:426px) {
+     .featured-product,
+    .product-list2 ,.men-perfume,.pefume_list .parent ,.product-list3{
+        grid-template-columns:1fr;
+    }
+     .product-list,
+    .featured-collection,
+    .product-banner,
+    .men-perfume,
+    .pefume_list,
+    .brand-section {
+
+        padding: 30px 15px;
+    }
+        .featured-title h3 {
+        left: 25.5%;
+    }
+    .featured-title h2{
+        font-size: 15px;
+    }
+    .action-button{
+        justify-content: center;
+    }
+    .brand-section h1{
+        font-size: 20px;
+    }
+    .brand-section p {
+        font-size: 10px;
+    }
+    .footer-email h4{
+        font-size: 11px;
+    }
+    
+}

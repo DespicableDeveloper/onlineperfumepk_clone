@@ -1,0 +1,36 @@
+@font-face{
+    font-family: 'playfair';
+    src: url("../font/Playfair_Display/static/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+/* @font-face {
+    font-family: 'notosans';
+    src: url("../font/Noto_Sans/static/NotoSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face{
+    font-family: 'opensans';
+    src: url("../font/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+/* 
+@font-face {
+    font-family: 'opensans';
+    src: url("../font/Open_Sans/static/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
+

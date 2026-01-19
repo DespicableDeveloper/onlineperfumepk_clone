@@ -1,0 +1,634 @@
+:root {
+    --font-notosans: "playfair";
+    --font-opensans: "opensans";
+    --primary-color: #daa877;
+    --secondary-color: #000;
+    --red-color: #db0000;
+    --nav-font: 14px;
+    --nav-link-font: 15px;
+    --light-color: white;
+    --light-border-rgba-color: 255, 255, 255, 0.575;
+    --light-bg-rgba-color: 255, 255, 255, 0.775
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-opensans);
+
+}
+
+body {
+    width: 100% !important;
+}
+
+.product-list,
+.featured-collection,
+.product-banner,
+.men-perfume,
+.pefume_list,
+.brand-section {
+
+    padding: 30px 150px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* HomePage Start */
+
+.header-title {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 7px 0px;
+    font-size: 15px;
+
+}
+
+.header-section {
+    background-color: var(--secondary-color);
+    display: flex;
+}
+
+.header-child1 {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.header-child2 {
+    width: 30%;
+}
+
+
+.input {
+    background-color: aqua;
+    width: 60%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 3.2px solid var(--primary-color);
+    height: 50px;
+
+}
+
+.header-child1 .img {
+    width: 30%;
+
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    height: 100%;
+}
+
+.input button {
+    padding: 5px 5px;
+    border-radius: 0px;
+    border: none;
+    height: 100%;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.img {
+    text-align: end;
+}
+
+/* .input div{
+    display: flex;
+    width: 70%;    
+} */
+/* HomePage End */
+
+.input input:focus {
+    outline: none;
+    /* border: none; */
+
+}
+
+
+.header-child2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.header-icon1 svg,
+.header-icon2 svg {
+    display: block;
+    margin: auto;
+}
+
+.header-icon1 span,
+.header-icon2 span {
+    font-size: var(--nav-font);
+    color: var(--light-color);
+
+}
+
+
+.header-icon3 {
+    display: none;
+}
+
+
+nav {
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+    width: 85%;
+    margin: auto;
+
+}
+
+nav ul li {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: var(--nav-link-font);
+    text-transform: uppercase;
+
+}
+
+nav ul li:nth-child(1) {
+    background-color: var(--secondary-color);
+}
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    width: 100%;
+    color: white;
+    z-index: -1;
+}
+
+
+nav ul li:hover::before {
+    animation: slidedown 0.5s linear;
+    height: 100%
+}
+
+
+@keyframes slidedown {
+    0% {
+        height: 0%;
+    }
+
+    50% {
+        height: 50%
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+
+
+.footer-email {
+    background-color: var(--primary-color);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 10px 0px;
+    column-gap: 15px;
+}
+
+.footer-email h4 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-color);
+}
+
+.footer-input {
+    /* width: 35%; */
+    display: flex;
+    column-gap: 15px;
+}
+
+.footer-input input {
+    border: none;
+    width: 60%;
+    padding: 10px 20px;
+}
+
+.footer-input button {
+    width: 25%;
+    text-transform: uppercase;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.footer-main {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    display:flex;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.footer-section1 {
+    width: 30%;
+}
+
+.footer-section2 {
+    width: 25%;
+}
+
+.footer-section3 {
+    width: 30%;
+}
+
+.footer-section1 ul,
+.footer-section2 ul,
+.footer-section3 ul {
+    list-style: none;
+}
+
+.footer-section1 ul li a,
+.footer-section2 ul li a,
+.footer-section3 ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.footer-section1 ul li p {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section1 h3,
+.footer-section2 h3,
+.footer-section3 h3 {
+
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.footer-section1 ul li,
+.footer-section2 ul li,
+.footer-section3 ul li {
+    margin: 10px 0px;
+
+}
+
+.footer-section1 ul li p {
+    display: flex;
+    gap: 10px;
+}
+
+/* .footer-section1{
+    background-color: red;
+} 
+.footer-section2{
+    background-color: green;
+} 
+.footer-section3{
+background-color: orange;
+} */
+.footer-bottom {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border-top-color: var(--light-color);
+    border-top-width: 1px;
+    border-top-style: solid;
+    padding: 35px 80px;
+}
+
+
+
+
+
+
+.featured-collection {
+    text-align: center;
+    position: relative;
+}
+
+.featured-title h3,
+.featured-title h2 {
+    background-color: var(--light-color);
+    position: absolute;
+    padding: 0px 10px;
+    text-transform: uppercase;
+}
+
+.featured-title h3 {
+
+    top: 18px;
+    left: 43.5%;
+
+
+}
+
+/*
+.featured-title h2 {
+
+    top: 5px;
+    left: 40%;
+} */
+
+.featured-collection:nth-child(1) .featured-title h2 {
+    color: grey;
+    top: 9px;
+    left: 25%;
+}
+
+.featured-collection:nth-child(1) .featured-title h2 span {
+    color: var(--secondary-color);
+}
+
+
+
+.featured-product,
+.product-list2,.men-perfume {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.pefume_list .parent{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product-list3{
+     display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.list-1,
+.list-2,
+.list-3,
+.list-4 {
+
+    overflow: hidden;
+    position: relative;
+    transition: 1s;
+
+}
+
+.list-1 .list-info,
+.list-2 .list-info,
+.list-3 .list-info,
+.list-4 .list-info {
+    transition: 0.5s;
+}
+
+.list-1 img,
+.list-2 img,
+.list-3 img,
+.list-4 img,
+.product-list-1 img,
+.product-list-2 img,
+.product-list-3 img,
+.product-list-4 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.list-1:hover .list-info,
+.list-2:hover .list-info,
+.list-3:hover .list-info,
+.list-4:hover .list-info {
+    top: 220px;
+
+}
+
+.list-1 .list-info,
+.list-2 .list-info,
+.list-3 .list-info,
+.list-4 .list-info {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    content: "";
+    width: 100%;
+    background-color: rgba(var(--light-bg-rgba-color));
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-info {
+    text-transform: uppercase;
+}
+
+
+.list-1 img:hover .list-info {
+    transform: translateY(50px);
+
+}
+
+.product-banner .banner-2 img {
+    width: 100%;
+}
+
+
+
+.product-list2 {
+    margin: 15px 0px;
+}
+
+
+.product2-list-1 img,
+.product2-list-2 img {
+    width: 100%;
+}
+
+/* .men-perfume {
+    display: flex;
+    gap: 25px;
+} */
+
+.men-perfume-col .title span {
+    background-color: var(--red-color);
+    color: var(--light-color);
+
+}
+
+.men-perfume-col .title h5 {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.men-perfume-col .title p {
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.men-perfume-col .title p span {
+    color: var(--red-color);
+    background-color: transparent;
+}
+
+.action-button {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.action-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: none;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* .action-button button:nth-child(2),.action-button button:nth-child(3){
+    display: none;
+} */
+.men-perfume-col {
+    overflow: hidden;
+
+
+}
+
+.action-button button {
+    cursor: pointer;
+}
+
+.action-button button:nth-child(2),
+.action-button button:nth-child(3) {
+    transform: translateY(50px);
+
+
+}
+
+.action-button button:nth-child(2) {
+    transition: 0.5s;
+}
+
+.action-button button:nth-child(3) {
+    transition: 1s;
+}
+
+.men-perfume-col:hover .action-button button:nth-child(2),
+.men-perfume-col:hover .action-button button:nth-child(3) {
+    transform: translateY(0px);
+}
+
+/* .pefume_list .parent {
+    display: flex;
+    gap: 25px;
+} */
+
+.pefume_list .parent .pefume_list_col img {
+    width: 100%;
+}
+
+.brands {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+.brands .brands-col img {
+    width: 100%;
+}
+
+.brands .brands-col {
+    cursor: pointer;
+}
+
+.brands .brands-col:nth-child(2) img,
+.brands .brands-col:nth-child(5) img {
+    filter: grayscale(100%);
+    transition: 0.3s;
+
+}
+
+.brands .brands-col:nth-child(2):hover img,
+.brands .brands-col:nth-child(5):hover img {
+    filter: grayscale(0%);
+}
+
+.brand-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.brand-section p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.banner-imgs img {
+    width: 100%;
+
+}
+
+.banner-imgs {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-imgs .banner-borders {
+    width: 90%;
+    height: 77%;
+    border: 5px solid rgba(var(--light-border-rgba-color));
+    position: absolute;
+    transition: 0.5s;
+    cursor: pointer;
+
+    /* top: 10%; */
+    /* left: 5%; */
+    /* top: 0;  */
+    /* left:0; */
+}
+
+.banner-imgs:hover .banner-borders {
+    width: 99.2%;
+    height: 99%
+}
